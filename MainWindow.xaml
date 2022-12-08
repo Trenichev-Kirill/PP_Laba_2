@@ -1,0 +1,18 @@
+<Window x:Class="lab2Win12._10._22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2Win12._10._22"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <MediaElement    Margin="9,2,218,3" LoadedBehavior="Manual" Name="myPlayer"/>
+        <Button Content="Open" Click="Button_Click" Margin="0,10,10,0" HorizontalAlignment="Right" Width="192" Height="62" VerticalAlignment="Top"/>
+        <Button Content="Star" Height="35" Margin="0,93,10,0" VerticalAlignment="Top" Click="Button_Click_1" HorizontalAlignment="Right" Width="150"/>
+        <Button Content="pause" Height="35" Margin="0,156,10,0" VerticalAlignment="Top" Click="Button_Click_2" HorizontalAlignment="Right" Width="150"/>
+        <Button Content="Stop" Margin="0,217,10,0" Click="Button_Click_3" HorizontalAlignment="Right" Width="150" Height="35" VerticalAlignment="Top"/>
+        <Slider Name="volumeSlider" VerticalAlignment="Top" ValueChanged="ChangeMediaVolume" 
+       Minimum="0" Maximum="1" Value="0.5" RenderTransformOrigin="5.333,6.473" Margin="0,286,5,0" HorizontalAlignment="Right" Width="197"/>
+    </Grid>
+</Window>
